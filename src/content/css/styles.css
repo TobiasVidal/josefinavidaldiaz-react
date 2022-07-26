@@ -1,0 +1,705 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* 
+ * 01 - General
+ * 02 - Logo
+ * 03 - Side nav
+ * 04 - Index Content
+ * 05 - Impresiones Content
+ * 06 - Signo
+ * 07 - Sketchbook
+ * 08 - Historia
+ * 09 - Sommerregen
+ * 10 - Menu Mobile
+ * 11 - Lost & Found
+ * 12 - Flickering light
+ */
+ /* 01 General */
+@font-face {
+    font-family: Orator-Std-Medium;
+    src: url(../fonts/Orator-Std-Medium.ttf);
+}
+.btn-link {
+    outline: none;
+    box-shadow: none !important;
+}
+#app {
+    display: flex;
+    /* height: 100%; */
+    padding-top: 42px;
+    padding-left: 30px;
+}
+.italic {
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+}
+a:hover {    
+    cursor: pointer;
+}
+
+.description {
+    max-width: 660px;
+    font-size: 12px;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #acaaaa;
+    margin-top: 0;
+}
+materiales {
+    text-indent: 0;
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    float: left;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    left: 100px;
+    border: none;
+    background-color: white;
+    color: #acaaaa;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+#back-to-top:hover {
+    font-weight: bold;
+}
+#back-to-top:active, #back-to-top:focus {
+    outline: 0;
+}
+
+.lang-es {
+    display: none;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+@media only screen and (max-width: 780px) {
+    .site-content {
+        width: 90%;
+        margin: 50px 5% 0;
+    }
+    #back-to-top {
+        bottom: 15px;
+        left: auto;
+        right: 15px;
+        padding: 5px 10px;
+        background-color: #f5f5f5;
+        border: 1px solid #a5aaaa;
+        border-radius: 16px;
+        font-size: 12px;
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    .site-content {
+        float: left;
+        margin-left: 3%;
+        max-width: 72%;
+    }
+}
+
+/* 02 Logo */
+.logo-container {
+    overflow: visible;
+    position: relative;
+    padding: 0 0 20px 30px;
+}
+#logo {
+    width: 102px;
+    float: left;
+    margin-left: 6px;
+}
+img.polilla {
+    height: 147px;
+    position: absolute;
+    top: -24px;
+    right: -37px;
+}
+/* 03 Side nav */
+.sidebar-nav {    
+    float: left;    
+    height: 100%;
+}
+.sidenav-content {
+    width: 330px;
+}
+.sidebar-nav ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+.sidebar-nav ul li {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #acaaaa;
+    line-height: 79%;
+}
+.sidebar-nav ul li:last-child {
+    margin-bottom: 0;
+}
+li a {
+    display: inline-block;
+    padding-bottom: 3px;
+    color: #acaaaa;
+    transition: box-shadow 0.6s ease;
+}
+li a:hover, li a.active {
+    box-shadow: 0px 3px 0px -2px #acaaaa;
+    color: inherit;
+}
+.sidebar-img {
+    width: 270px;
+    padding-left: 25px;
+}
+.redes-sociales {
+    padding-left: 40px;
+}
+.redes-sociales a {
+    font-size: 17px;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #878585;
+}
+/* 04 Index Content */
+img.schone {
+    width: 355px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 780px) {
+    img.schone {
+        width: 100%;
+        margin: 0;
+    }
+}
+/* 05 Impresiones Content */
+.impressions-img-group {
+  margin-bottom: 20px;
+}
+.artwork-date {
+  margin: 8px 0 5px;
+  display: block;
+  font-family: Orator-Std-Medium, "Times New Roman", Serif;
+  color: #acaaaa;
+  font-size: 11px;    
+}
+
+@media only screen and (max-width: 780px) {
+    .impressions img {
+        width: 90%;
+        margin: 0 4%;
+    }
+}
+@media only screen and (min-width: 781px) {
+    .impressions img {
+        height: 42vw;    
+    }
+}
+/* 06 Signo */
+.signo p {    
+    line-height: 1;
+}
+.signo img {
+    width: 500px;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+/* 07 Sketchbook */
+.sketchbook p {    
+    line-height: 1;
+}
+.sketchbook img {
+    width: 70%;
+}
+/* 08 Historia */
+.historia img {
+    width: 500px;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.historia p {    
+    line-height: 1;
+}
+/* 09 Sommerregen */
+.sommerregen {
+    display: flex;
+    flex-direction: column;
+}
+.sommerregen p {    
+    line-height: 1;
+    max-width: 487px;
+    text-indent: 0;
+}
+.sommerregen .carousel-container {
+    display: flex;
+}
+.sommerregen .carousel {
+  width: 630px;
+  max-width: 100%;
+  height: 550px;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.sommerregen .slides {
+  white-space: nowrap;
+  transition: transform 1.2s ease;
+}
+.sommerregen .slides > div {
+  width: 630px;
+  max-width: 100%;
+  height: 550px;
+  display: inline-block;
+}
+.sommerregen .slides img.vertical {
+    height: inherit;
+    margin-left: 85px;
+}
+.sommerregen .slides img.horizontal {
+    width: inherit;
+}
+@media only screen and (max-width: 780px) {
+    .site-content.sommerregen {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+.sommerregen .slides-navigation {
+    display: flex;
+    flex-direction: column;
+}
+/* Navegacion derecha */
+/* .container-arrows {
+    margin: 175px 0 0 10px;
+} */
+/* a.arrow {
+    color: #acaaaa;
+    font-size: 43px;
+    display: block;
+    margin-bottom: 10px;
+} */
+.sommerregen .img-counter {
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #acaaaa;
+    /* margin-top: 224px; */
+}
+@media only screen and (max-width: 780px) {
+    /* TOFIX:
+    #slides img.vertical {
+        height: 78%;
+        max-width: 100%;
+        margin: 0 6% 0 0;
+    }
+    #slides img.horizontal {
+        width: 100%;
+    }
+    .container-arrows {
+        margin: 0;
+        float: none;
+        position: relative;
+        top: -100px;
+    }
+    a.arrow {
+        float: right;
+        margin-right: 20px;
+    } */
+}
+/* 10 Menu Mobile */
+#mobile-menu {
+    display: none;
+    padding: 10px;
+}
+#mobile-menu .sidenav-toggle {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 1s ease;
+}
+.icon-bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #acaaaa;
+    margin: 6px 0;
+}
+*:focus {
+    outline: none;
+}
+@media only screen and (max-width: 780px) {
+    #main-content {
+        padding: 0;
+    }
+    #main-content > .sidebar-nav {
+        max-width: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        transition: max-width 1s ease;
+        border-radius: 0 0 10px;
+    }
+    #mobile-menu {
+        display: block;
+    }
+    #mobile-menu > button.sidenav-toggle {
+        float: left;
+    }
+    #mobile-menu > button.sidenav-toggle.active {
+        background-color: #f5f5f5;
+    }
+    #mobile-menu img.polilla {
+        height: 110px;
+        top: -10px;
+        z-index: 2;
+    }
+    #logo {
+        margin-left: 14px;
+        margin-top: -3px;
+    }
+    .sidebar-nav {
+        padding-bottom: 50px;
+        height: auto;
+        z-index: 1;
+    }
+    .sidebar-nav .logo-container {
+        display: none;
+    }
+    .sidebar-img {
+        width: 160px;
+    }
+    #mobile-menu h6 {
+        color: #a5aaaa;
+        font-family: Orator-Std-Medium, "Times New Roman", Serif;
+        font-weight: 500;
+        margin: 5px 0 0;
+    }
+    #mobile-menu button > img {
+        width: 20px
+    }
+}
+/* 10 Lost & Found */
+.lost-and-found .img-obra {
+  max-width: 100%;
+}
+@media only screen and (max-width: 780px) {
+}
+@media only screen and (min-width: 781px) {
+
+}
+
+/* 12 - Flickering light */
+
+@media only screen and (max-width: 780px) {
+    #flickering-light-img-container {
+      width: 100vw;
+    }
+    
+    #flickering-light-img-container img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 781px) {
+    #flickering-light-img-container {
+      position: relative;
+      width: 54vw;
+      height: 280vw;
+    }
+
+    img.flickering {
+      position: absolute;
+    }
+
+    img.flickering-right {
+      right: 0;
+    }
+
+    img.flickering-left {
+      left: 0;
+    }
+
+    #flickering-0 {
+      height: 32vw;
+      width: auto;
+    }
+
+    #flickering-1 {
+      height: 36vw;
+      width: auto;
+      top: 4vw;
+    }
+
+    #flickering-2 {
+      height: 36vw;
+      width: auto;
+      top: 34vw;
+    }
+
+    #flickering-3 {
+      height: 34vw;
+      width: auto;
+      top: 42vw;
+    }
+
+    #flickering-4 {
+      height: 34vw;
+      width: auto;
+      top: 72vw;
+    }
+
+    #flickering-5 {
+      height: 37vw;
+      width: auto;
+      top: 78vw;
+    }
+
+    #flickering-6 {
+      height: 34vw;
+      width: auto;
+      top: 117vw;
+    }
+
+    #flickering-7 {
+      height: 37vw;
+      width: auto;
+      top: 117vw;
+    }
+
+    #flickering-8 {
+      height: 37vw;
+      width: auto;
+      top: 156vw;
+    }
+
+    #flickering-9 {
+      height: 33vw;
+      width: auto;
+      top: 158vw;
+    }
+
+    #flickering-10 {
+      height: 38vw;
+      width: auto;
+      top: 195vw;
+    }
+
+    #flickering-11 {
+      height: 32vw;
+      width: auto;
+      top: 196vw;
+    }
+
+    #flickering-12 {
+      height: 34vw;
+      width: auto;
+      top: 235vw;
+    }
+
+    #flickering-13 {
+      height: 39vw;
+      width: auto;
+      top: 237vw;
+    }
+}
+
+.moved-in-the-summer img, .rose img {
+  width: 500px;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
