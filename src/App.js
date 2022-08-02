@@ -10,6 +10,9 @@ import Flickering from './pages/Flickering';
 import LostAndFound from './pages/LostAndFound';
 import Impressions from './pages/Impressions';
 import Sommerregen from './pages/Sommerregen';
+import Sketchbook from './pages/Sketchbook';
+import Signs from './pages/Signs';
+import NaturalScience from './pages/NaturalScience';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
             <Route path='/lostandfound' element={<LostAndFound />} />
             <Route path='/impressions' element={<Impressions />} />
             <Route path='/sommerregen' element={<Sommerregen />} />
+            <Route path='/sketchbook' element={<Sketchbook />} />
+            <Route path='/signs' element={<Signs />} />
+            <Route path='/naturalscience' element={<NaturalScience />} />
           </Routes>
         </div>
       </div>

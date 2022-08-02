@@ -51,12 +51,12 @@ const NavBar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/signo">
+                        <a href="/signs">
                             signs
                         </a>
                     </li>
                     <li>
-                        <a href="/historia">
+                        <a href="/naturalscience">
                             Natural science                            
                         </a>
                     </li>

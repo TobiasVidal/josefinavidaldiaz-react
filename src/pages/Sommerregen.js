@@ -55,14 +55,12 @@ const Home = () => {
                     </div>
                 </div>
                 <article className='slides-navigation'>
-                    <div className="container-arrows">
-                        <button className="btn btn-link arrow" onClick={() => carouselArrowClick(true)}>
-                            <FontAwesomeIcon icon={faAngleRight} />
-                        </button>
-                        <button className="btn btn-link arrow" onClick={() => carouselArrowClick(false)}>
-                            <FontAwesomeIcon icon={faAngleLeft} />
-                        </button>
-                    </div>
+                    <button className="btn btn-link arrow" onClick={() => carouselArrowClick(true)}>
+                        <FontAwesomeIcon icon={faAngleRight} />
+                    </button>
+                    <button className="btn btn-link arrow" onClick={() => carouselArrowClick(false)}>
+                        <FontAwesomeIcon icon={faAngleLeft} />
+                    </button>
                     <div className="img-counter">
                         {currentSlideIndex + 1}/{slideCount}
                     </div>

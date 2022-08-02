@@ -115,6 +115,10 @@ textarea {
     font-family: Orator-Std-Medium;
     src: url(../fonts/Orator-Std-Medium.ttf);
 }
+.d-flex {
+    display: flex;
+}
+
 .btn-link {
     outline: none;
     box-shadow: none !important;
@@ -141,9 +145,6 @@ a:hover {
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #acaaaa;
     margin-top: 0;
-}
-materiales {
-    text-indent: 0;
 }
 .footer {
     width: 100%;
@@ -308,10 +309,10 @@ img.schone {
     }
 }
 /* 06 Signo */
-.signo p {    
+.signs p {    
     line-height: 1;
 }
-.signo img {
+.signs img {
     width: 500px;
     max-width: 100%;
     padding-bottom: 20px;
@@ -324,12 +325,12 @@ img.schone {
     width: 70%;
 }
 /* 08 Historia */
-.historia img {
+.natural-science img {
     width: 500px;
     max-width: 100%;
     padding-bottom: 20px;
 }
-.historia p {    
+.natural-science p {    
     line-height: 1;
 }
 /* 09 Sommerregen */
@@ -380,6 +381,21 @@ img.schone {
 .sommerregen .slides-navigation {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.sommerregen .arrow {
+    color: #acaaaa;
+    font-size: 43px;
+}
+.sommerregen .arrow:first-of-type {
+    color: #acaaaa;
+    font-size: 43px;
+    margin-top: auto;
+}
+.sommerregen .arrow:last-of-type {
+    color: #acaaaa;
+    font-size: 43px;
+    margin-bottom: auto;
 }
 /* Navegacion derecha */
 /* .container-arrows {
