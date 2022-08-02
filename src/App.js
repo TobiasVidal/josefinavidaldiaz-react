@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './content/css/normalize.css';
@@ -13,8 +13,40 @@ import Sommerregen from './pages/Sommerregen';
 import Sketchbook from './pages/Sketchbook';
 import Signs from './pages/Signs';
 import NaturalScience from './pages/NaturalScience';
+import { useEffect } from 'react';
 
 function App() {
+  
+  const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
+  useEffect(() => {
+    const backToTopBtn = document.getElementById('back-to-top');
+    const onBackToTopBtnTransitionEnd = () => {
+      console.log('lptm');
+      if (backToTopBtn.style.opacity === "0") {
+        backToTopBtn.style.visibility = 'hidden';
+      }
+    }
+    const onWindowScroll = () => {
+      if (document.documentElement.scrollTop > 800) {
+        backToTopBtn.style.visibility = 'visible';
+        backToTopBtn.style.opacity = '1';
+      } else {
+        backToTopBtn.style.opacity = '0';
+      }
+    }
+
+    window.addEventListener('scroll', onWindowScroll);
+    backToTopBtn.addEventListener('transitionend', onBackToTopBtnTransitionEnd);
+    
+    return () => {
+      window.removeEventListener('scroll', onWindowScroll);
+      backToTopBtn.removeEventListener('transitionend', onBackToTopBtnTransitionEnd);
+    };
+  }, []);
+
   return (
     <Router>
       <div id="app">
@@ -34,6 +66,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <button id="back-to-top" type="button" onClick={backToTop}>Back to Top</button>
     </Router>
   );
 }

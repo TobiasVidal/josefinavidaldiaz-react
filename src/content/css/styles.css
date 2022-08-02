@@ -161,7 +161,9 @@ a:hover {
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     font-size: 16px;
     cursor: pointer;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
 }
 #back-to-top:hover {
     font-weight: bold;
@@ -226,7 +228,7 @@ a:hover {
 img.polilla {
     height: 147px;
     position: absolute;
-    top: -24px;
+    top: -40px;
     right: -37px;
 }
 /* 03 Side nav */
