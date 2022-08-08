@@ -16,7 +16,7 @@ const NavBar = () => {
                     <a href="/"><img id="logo" src={logo} alt="logo" /></a>
                     <img className="polilla" src={polilla} alt="polilla" />
                 </div>
-                <ul>
+                <ul className='mb-1'>
                     <li>
                         <a href="/summer" className={isActiveTab('/summer') ? 'active' : ''}>
                             She moved in the Summer
