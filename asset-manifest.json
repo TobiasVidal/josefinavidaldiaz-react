@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/josefinavidaldiaz-react/static/css/main.b5042c55.css",
-    "main.js": "/josefinavidaldiaz-react/static/js/main.c15f2c09.js",
+    "main.js": "/josefinavidaldiaz-react/static/js/main.835b5fc2.js",
     "static/js/787.52b1fa59.chunk.js": "/josefinavidaldiaz-react/static/js/787.52b1fa59.chunk.js",
     "static/media/moms-rose.gif": "/josefinavidaldiaz-react/static/media/moms-rose.06161c949f49498a36d0.gif",
     "static/media/moms-rose-pencil.gif": "/josefinavidaldiaz-react/static/media/moms-rose-pencil.78ae525e83e3c30c93b2.gif",
@@ -31,11 +31,11 @@
     "static/media/logo.png": "/josefinavidaldiaz-react/static/media/logo.49ecc7a6ca408c86cab3.png",
     "index.html": "/josefinavidaldiaz-react/index.html",
     "main.b5042c55.css.map": "/josefinavidaldiaz-react/static/css/main.b5042c55.css.map",
-    "main.c15f2c09.js.map": "/josefinavidaldiaz-react/static/js/main.c15f2c09.js.map",
+    "main.835b5fc2.js.map": "/josefinavidaldiaz-react/static/js/main.835b5fc2.js.map",
     "787.52b1fa59.chunk.js.map": "/josefinavidaldiaz-react/static/js/787.52b1fa59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5042c55.css",
-    "static/js/main.c15f2c09.js"
+    "static/js/main.835b5fc2.js"
   ]
 }
