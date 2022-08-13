@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename='/josefinavidaldiaz-react'>
+    <Router>
       <div id="app">
         <NavBar />
         <div className='site-content'>
