@@ -23,8 +23,8 @@ function App() {
   
   useEffect(() => {
     const backToTopBtn = document.getElementById('back-to-top');
+    if (!backToTopBtn) { return () => {}; }
     const onBackToTopBtnTransitionEnd = () => {
-      console.log('lptm');
       if (backToTopBtn.style.opacity === "0") {
         backToTopBtn.style.visibility = 'hidden';
       }
